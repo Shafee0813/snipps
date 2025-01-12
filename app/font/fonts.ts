@@ -1,4 +1,4 @@
-import { Montserrat, Poppins } from "@next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 
 // Load the Poppins font
 export const poppins = Poppins({
