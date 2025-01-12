@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import Post from "@/models/post";
 import { connectToDB } from "@/lib/dbconnect";
 
-export async function GET(request: Request, { params }: { params: { id: string } }) {
+export async function GET({ params }: { params: { id: string } }) {
   try {
     await connectToDB();
     const  id  = (await params).id; // Destructure id properly from params

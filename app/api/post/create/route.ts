@@ -7,15 +7,14 @@ export async function POST(req: Request) {
     await connectToDB();
     
     const body = await req.json(); // Parse the JSON body
-    const { creator, title, description, language, code, views } = body;
+    const { creator, title, description, language, code} = body;
 
     const newPost = new Post<IPost>({
       creator,
       title,
       description,
       language,
-      code,
-      views,
+      code
     });
 
     await newPost.save();
