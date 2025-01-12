@@ -1,6 +1,5 @@
 
 import Navbar from '@/components/Navbar'
-import { TextEffect } from '@/components/ui/text-effect'
 import {
   Accordion,
   AccordionContent,
@@ -24,9 +23,9 @@ const page = () => {
     <section className='max-w-screen  relative bg-black'>
       <Navbar/>
       <div className='flex flex-col font-montserrat text-center justify-center items-center py-16 m-5 min-h-[calc(100vh-100px)] '>
-        <TextEffect per='word' preset='fade' className='text-5xl pb-3 font-bold max-md:text-2xl block  '>Introducing Snipps</TextEffect> 
-        <TextEffect per='char' delay = {0.5} speedReveal={2} preset='fade' className='text-4xl font-bold max-md:text-xl block  pb-5'> A code snippet sharing platform</TextEffect>
-        <TextEffect per='char' delay = {1.0} speedReveal={3} preset='fade' className='text-xl text-neutral-400 font-sans'>The perfect platform sharing short and reusable code.</TextEffect>
+        <h1  className='text-5xl pb-3 font-bold max-md:text-2xl block  motion-preset-slide-right-lg motion-opacity-in-[0%] motion-delay-800'>Introducing Snipps</h1> 
+        <h1 className='text-4xl font-bold max-md:text-xl block  pb-5 motion-preset-slide-left-lg motion-opacity-in-[0%] motion-delay-800'> A code snippet sharing platform</h1>
+        <h1 className='text-xl text-neutral-400 font-sans motion-preset-slide-left-lg motion-opacity-in-[0%] motion-delay-800'>The perfect platform sharing short and reusable code.</h1>
       
         <Accordion type="single" collapsible className='widths  mt-10 text-left motion-preset-slide-right-lg motion-opacity-in-[0%] motion-delay-1000'>
         <AccordionItem value="item-1">
